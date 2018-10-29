@@ -3,13 +3,28 @@ title: Le Wagon - Middleman
 ---
 
 <div id="home">
-  <div class="home-content">
-    <%= image_tag "logo.png", width: "200" %>
-    <p>
-      Middleman is now running!
-    </p>
-    <p class="about">
-      <%= link_to "More about this template", "about.html" %>
-    </p>
+  <div class="container">
+    <h1>Welcome home</h1>
+    <p>Book unique homes and experience a city like a local.</p>
+    <form action="#" class="form-inline">
+      <input type="text" class="form-control input-lg" placeholder="Where?">
+      <input type="text" class="form-control input-lg" placeholder="When?">
+      <select name="" id="" class="form-control input-lg">
+        <option value="1">1 guest</option>
+        <option value="2">2 guests</option>
+        <option value="3">3 guests</option>
+      </select>
+      <input type="submit" class="btn btn-primary btn-lg" value="Search">
+    </form>
+  </div>
+</div>
+<div id="cards-wrapper" class="text-center">
+  <div class="container">
+    <h2>Recent flats</h2>
+    <div class="cards">
+      <% data.fuckers.each do |fucker| %>
+      <%= partial "components/card", locals: { :name => fucker[:name], :address => fucker[:address] } %>
+      <% end %>
+    </div>
   </div>
 </div>

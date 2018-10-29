@@ -1,0 +1,22 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 10px;
+  position: relative;
+  background-size: cover;
+  height: 200px;
+  width: 32%;
+  color: white;
+  text-align: left;
+  img {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    border-radius: 50%;
+    width: 40px;
+  }
+  p {
+    font-size: 14px;
+  }
+}

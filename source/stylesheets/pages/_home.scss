@@ -1,7 +1,8 @@
 #home {
-  background-color: #D23333;
+  background-image: url("../images/paris.jpg");
+  background-size: cover;
   color: white;
-  height: 100vh;
+  height: calc(100vh - 70px);
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -14,4 +15,19 @@
     font-weight: bold;
     font-size: 16px;
   }
+}
+ #cards-wrapper {
+  padding: 100px 0;
+  background-color: white;
+  h2 {
+    margin-top: 0px;
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: bold;
+  }
+ }
+
+.cards  {
+  display: flex;
+  justify-content: space-between;
 }
